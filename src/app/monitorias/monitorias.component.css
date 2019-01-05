@@ -1,0 +1,21 @@
+
+#horarios{
+    margin-top: 8%;
+    margin-left: 13%;
+    width: 80%;
+}
+table, th , td {
+    margin-top: 5%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#area{
+ width: 90%;
+ height: 100%;
+ padding-bottom: 8%;
+}
+#botao{
+    padding-top: 2%
+}

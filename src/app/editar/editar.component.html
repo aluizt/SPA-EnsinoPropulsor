@@ -1,0 +1,56 @@
+
+<p>MONITORIA PRESENCIAL CAMPUS UNISINOS SÃO LEOPOLDO MECÂNICA A</p>
+
+<section id="horarios">
+    <div>
+        <form>
+            <div class="form-group">
+                <label class="control-label" for="segunda">Segunda</label>
+                <input width="50%" type="text" class="form-control" name="Segunda" 
+                    id="segunda" [value]="monitoria.segunda1"
+                    (input)="monitoria.segunda1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="terca">Terça</label>
+                <input type="text" class="form-control" name="terca" 
+                    id="terca" [value]="monitoria.terca1"
+                    (input)="monitoria.terca1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="quarta">Quarta</label>
+                <input type="text" class="form-control" name="quarta" 
+                    id="quarta" [value]="monitoria.quarta1"
+                    (input)="monitoria.quarta1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="quinta">Quinta</label>
+                <input type="text" class="form-control" name="quinta" 
+                    id="quinta" [value]="monitoria.quinta1"
+                    (input)="monitoria.quinta1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="sexta">Sexta</label>
+                <input type="text" class="form-control" name="sexta" 
+                    id="sexta" [value]="monitoria.sexta1"
+                    (input)="monitoria.sexta1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="sabado">Sabado</label>
+                <input type="text" class="form-control" name="sabado" 
+                    id="sabado" [value]="monitoria.sabado1"
+                    (input)="monitoria.sabado1 = $event.target.value">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="inicio">Inicio</label>
+                <input type="text" class="form-control" name="inicio" 
+                    id="sabado" [value]="monitoria.inicio"
+                    (input)="monitoria.inicio = $event.target.value">
+            </div>                     
+            <hr />
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="botao1" (click)="goToSalvar()">Salvar</button>
+                <button type="text" class="btn btn-primary" id="botao2" (click)="goToVoltar()">Cancelar</button>
+            </div>
+        </form>  
+    </div>
+</section>

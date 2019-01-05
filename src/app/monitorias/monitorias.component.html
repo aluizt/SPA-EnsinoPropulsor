@@ -1,0 +1,70 @@
+<header>
+  
+</header>
+
+<main role="main">
+  <section id="horarios">
+    <p>MONITORIA PRESENCIAL CAMPUS UNISINOS SÃO LEOPOLDO {{areaTexto}}</p>
+
+    <div id="area">    
+      <p-table [value]="monitoria">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 80px">Horário</th>
+            <th style="width: 80px">Segunda</th>
+            <th style="width: 80px">Terça</th>
+            <th style="width: 80px">Quarta</th>
+            <th style="width: 80px">Quinta</th>
+            <th style="width: 80px">Sexta</th>
+            <th style="width: 80px">Sabado</th>
+            <th style="width: 60px"></th>
+          </tr>
+        </ng-template>  
+        <ng-template pTemplate="body" let-dia>
+          <tr>
+            <td>Manha</td>  
+            <td>{{dia.segunda1}}</td> 
+            <td>{{dia.terca1}}</td> 
+            <td>{{dia.quarta1}}</td> 
+            <td>{{dia.quinta1}}</td> 
+            <td>{{dia.sexta1}}</td> 
+            <td>{{dia.sabado1}}</td>
+            <td><p-button label="Editar" (click)="goToEditar()"></p-button></td> 
+          </tr>
+          <tr>
+              <td>Tarde</td>  
+              <td>{{dia.segunda2}}</td> 
+              <td>{{dia.terca2}}</td> 
+              <td>{{dia.quarta2}}</td> 
+              <td>{{dia.quinta2}}</td> 
+              <td>{{dia.sexta2}}</td> 
+              <td>{{dia.sabado2}}</td>
+              <td><p-button label="Editar" (click)="goToEditarTarde()"></p-button></td> 
+          </tr>
+          <tr>
+                <td>Vespertino</td>  
+                <td>{{dia.segunda3}}</td> 
+                <td>{{dia.terca3}}</td> 
+                <td>{{dia.quarta3}}</td> 
+                <td>{{dia.quinta3}}</td> 
+                <td>{{dia.sexta3}}</td> 
+                <td>{{dia.sabado3}}</td>
+                <td><p-button label="Editar" (click)="goToEditarVespertino()"></p-button></td> 
+          </tr>
+          <tr>       
+          <tr>
+                <td>Noite</td>  
+                <td>{{dia.segunda4}}</td> 
+                <td>{{dia.terca4}}</td> 
+                <td>{{dia.quarta4}}</td> 
+                <td>{{dia.quinta4}}</td> 
+                <td>{{dia.sexta4}}</td> 
+                <td>{{dia.sabado4}}</td>
+                <td><p-button label="Editar" (click)="goToEditarNoite()"></p-button></td> 
+          </tr>
+        </ng-template>
+      </p-table>
+      <p-button id="botao" label=" Voltar " (click)="goToVoltar()"></p-button>
+    </div>
+  </section>
+</main>

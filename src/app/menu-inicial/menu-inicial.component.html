@@ -1,0 +1,47 @@
+<div class="wrapper-content">
+  <mat-toolbar color="primary">
+      <span class="fill-remaining-space">
+
+        <button mat-icon-button [matMenuTriggerFor]="rootMenu">
+          MENU INICIAL
+        </button>
+
+        <mat-menu #rootMenu="matMenu" [overlapTrigger]="false">
+
+            <button mat-menu-item [matMenuTriggerFor]="subMenu">              
+              <span>Monitorias</span>
+            </button>
+
+            <button mat-menu-item >              
+              <span>Calendario</span>
+            </button>        
+
+            <button mat-menu-item >              
+                <span>Sair</span>
+            </button>   
+
+        </mat-menu>
+
+        <mat-menu #subMenu="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="subMenuFisica">Física</button>
+            <button mat-menu-item (click)="goToPortugues()">Português</button>
+            <button mat-menu-item>Química</button>
+            <button mat-menu-item>Matemática</button>
+            <button mat-menu-item>Estatística</button>
+        </mat-menu>
+
+        <mat-menu #subMenuFisica="matMenu">
+            <button mat-menu-item (click)="goToMecanicaA()">Mecânica A</button>
+            <button mat-menu-item (click)="goToMecanicaB()">Mecânica B</button>
+            <button mat-menu-item (click)="goToEletricidade()">Eletricidade e Magnetismo</button>
+            <button mat-menu-item (click)="goToOndas()">Ondas e Ótica</button>
+        </mat-menu>
+      
+      </span>
+      <span class="fill-remaining-space">Atualização do APP Ensino Propulsor</span>
+  </mat-toolbar>
+
+  <div class="fundo">
+    
+  </div>
+</div>
